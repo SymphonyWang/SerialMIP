@@ -48,8 +48,8 @@ Modifies a Neuroglancer JSON template to point to the uploaded Zarr files, enabl
 ### Dependencies
 - Python  
 - NumPy  
-- Tiff (from Gohlke's Python Extensions or similar)  
-- Zarr (with plugins like `zarr-blosarray`)  
+- Tiff  
+- Zarr 
 - Bioformats2raw  
 - AWS CLI  
 

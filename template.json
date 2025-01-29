@@ -1,0 +1,1303 @@
+{
+  "dimensions": {
+    "x": [
+      0.0000018,
+      "m"
+    ],
+    "y": [
+      0.0000018,
+      "m"
+    ],
+    "z": [
+      0.000001,
+      "m"
+    ],
+    "t": [
+      1,
+      ""
+    ]
+  },
+  "position": [
+    1111,
+    2222,
+    0,
+    0
+  ],
+  "crossSectionScale": 15,
+  "projectionOrientation": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "projectionScale": 16777216,
+  "layers": [
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        0
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#7f0000\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth1",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        1
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#cc0000\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "crossSectionRenderScale": 0.07150434680216836,
+      "name": "depth2",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        2
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#ff2800\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "crossSectionRenderScale": 0.06836727996599236,
+      "name": "depth3",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        3
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#ff6700\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth4",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        4
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#ffa600\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth5",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        5
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#ffe500\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth6",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        6
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#cdff29\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth7",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        7
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#96ff5f\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "shaderControls": {
+        "value": {
+          "range": [
+            0,
+            3027
+          ]
+        }
+      },
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth8",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        8
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#5fff96\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "shaderControls": {
+        "value": {
+          "range": [
+            14,
+            2645
+          ]
+        }
+      },
+      "crossSectionRenderScale": 0.0625,
+      "name": "depth9",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        9
+      ],
+      "tab": "source",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#29ffcd\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth10",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        10
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#00d4ff\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth11",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        11
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#0090ff\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth12",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        12
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#0090ff\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "shaderControls": {
+        "display_color": "#004cff"
+      },
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth13",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        13
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#0090ff\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "shaderControls": {
+        "display_color": "#0008ff"
+      },
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth14",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        14
+      ],
+      "tab": "rendering",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#0090ff\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "shaderControls": {
+        "display_color": "#0000cc"
+      },
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth15",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "transform": {
+          "outputDimensions": {
+            "c'": [
+              1,
+              ""
+            ],
+            "t": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          },
+          "inputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c'": [
+              1,
+              ""
+            ],
+            "z": [
+              1,
+              ""
+            ],
+            "y": [
+              0.0000018000000000000001,
+              "m"
+            ],
+            "x": [
+              0.0000018000000000000001,
+              "m"
+            ]
+          }
+        }
+      },
+      "localDimensions": {
+        "c'": [
+          1,
+          ""
+        ]
+      },
+      "localPosition": [
+        15
+      ],
+      "tab": "source",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#define VOLUME_RENDERING false\n\n#uicontrol invlerp value(range=[0,2000], window=[0,10000])\n\n#define depth1 \"#7f0000\"\n#define depth2 \"#cc0000\"\n#define depth3 \"#ff2800\"\n#define depth4 \"#ff6700\"\n#define depth5 \"#ffa600\"\n#define depth6 \"#ffe500\"\n#define depth7 \"#cdff29\"\n#define depth8 \"#96ff5f\"\n#define depth9 \"#5fff96\"\n#define depth10 \"#29ffcd\"\n#define depth11 \"#00d4ff\"\n#define depth12 \"#0090ff\"\n#define depth13 \"#004cff\"\n#define depth14 \"#0008ff\"\n#define depth15 \"#0000cc\"\n#define depth16 \"#00007f\"\n\n#uicontrol vec3 display_color color(default=\"#0090ff\");\n\n\nvoid main() {\n  float f = value();\n  //emitGrayscale(f);\n  //*\n  int as_alpha = 0;\n  if (as_alpha==1) {\n      emitRGBA(vec4(display_color,\n                    f\n                   ));\n  } else if (as_alpha==0) {\n      emitRGB(f*display_color);\n  }  //*/\n}",
+      "shaderControls": {
+        "display_color": "#00007f"
+      },
+      "crossSectionRenderScale": 0.06920685826913474,
+      "name": "depth16",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_wholemip_zarr/",
+        "transform": {
+          "outputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c^": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          }
+        }
+      },
+      "tab": "source",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "#uicontrol invlerp lut_0 (range=[0,2000],window=[0,10000],channel=[3]);\n\n\nvec3 channel3 = vec3(0);\nvoid main() {\n\n  float f = lut_0();\n  float r = (float(getDataValue(0).value) / 255.); // Red channel\n  float g = (float(getDataValue(1).value) / 255.); // Green channel\n  float b = (float(getDataValue(2).value) / 255.); // Blue channel  \n \n  float brightness = f; // Brightness (Alpha channel)\n  \n  emitRGBA(vec4(r * brightness, g * brightness, b * brightness, 1.0));\n}\n\n",
+      "shaderControls": {
+        "lut_0": {
+          "range": [
+            0,
+            8158
+          ],
+          "window": [
+            0,
+            10214
+          ]
+        }
+      },
+      "crossSectionRenderScale": 0.08180594578567622,
+      "channelDimensions": {
+        "c^": [
+          1,
+          ""
+        ]
+      },
+      "name": "filename_whole_mip"
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/colorbar/colorbar_jet_16_crop550.zarr/",
+        "transform": {
+          "matrix": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              3333
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              4444
+            ]
+          ],
+          "outputDimensions": {
+            "t": [
+              1,
+              ""
+            ],
+            "c^": [
+              1,
+              ""
+            ],
+            "z": [
+              0.000001,
+              "m"
+            ],
+            "y": [
+              0.0000018,
+              "m"
+            ],
+            "x": [
+              0.0000018,
+              "m"
+            ]
+          }
+        }
+      },
+      "tab": "source",
+      "opacity": 1,
+      "blend": "additive",
+      "shader": "void main () {\nemitRGB(vec3(toNormalized(getDataValue(0)),\ntoNormalized(getDataValue(1)),\ntoNormalized(getDataValue(2))));\n}",
+      "crossSectionRenderScale": 0.08938205547331585,
+      "channelDimensions": {
+        "c^": [
+          1,
+          ""
+        ]
+      },
+      "name": "colorbar_jet_16"
+    }
+  ],
+  "selectedLayer": {
+    "size": 533,
+    "visible": true,
+    "layer": "filename_whole_mip"
+  },
+  "layout": "xy",
+  "selection": {
+    "size": 533,
+    "visible": false
+  },
+  "layerListPanel": {
+    "visible": true
+  }
+}
