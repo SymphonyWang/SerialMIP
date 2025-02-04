@@ -35,7 +35,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -103,7 +103,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -171,7 +171,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -239,7 +239,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -307,7 +307,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -375,7 +375,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -443,7 +443,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -511,7 +511,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -587,7 +587,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -663,7 +663,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -731,7 +731,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -799,7 +799,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -867,7 +867,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -938,7 +938,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -1009,7 +1009,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -1080,7 +1080,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_multilayersmip_zarr/0",
         "transform": {
           "outputDimensions": {
             "c'": [
@@ -1151,7 +1151,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_wholemip_zarr/",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/filename_mip/filename_wholemip_zarr/",
         "transform": {
           "outputDimensions": {
             "t": [
@@ -1205,7 +1205,7 @@
     {
       "type": "image",
       "source": {
-        "url": "zarr2://https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/colorbar/colorbar_jet_16_crop550.zarr/",
+        "url": "zarr2://https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/colorbar/colorbar_jet_16_crop550.zarr/",
         "transform": {
           "matrix": [
             [

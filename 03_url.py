@@ -62,6 +62,6 @@ if __name__ == "__main__":
 
 # after running the script, the modified json file will be saved to the output directory
 # Use aws command to upload the json file to the s3 bucket
-# aws --endpoint-url https://redcloud.cac.cornell.edu:8443/ s3 --profile CAC cp /mnt/d/Xiaoman/002_serialMIP/04_json/AZ4_DB2d_Ex561.json s3://neuroglancer/AZ4_DB2d_Ex561_mip/AZ4_DB2d_Ex561.json
+# aws --endpoint-url https://wulab.cac.cornell.edu:8443/ s3 --profile CAC cp /mnt/d/Xiaoman/002_serialMIP/04_json/AZ4_DB2d_Ex561.json s3://neuroglancer/AZ4_DB2d_Ex561_mip/AZ4_DB2d_Ex561.json
 # finnal url like:
-# https://ngapp.mab3d-atlas.com/#!https://redcloud.cac.cornell.edu:8443/swift/v1/neuroglancer/AZ4_DB2b_Ex561_mip/AZ4_DB2b_Ex561.json
+# https://ngapp.mab3d-atlas.com/#!https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/AZ4_DB2b_Ex561_mip/AZ4_DB2b_Ex561.json
