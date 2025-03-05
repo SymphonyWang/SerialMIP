@@ -44,8 +44,10 @@ def modify_template_json(template_path, input_path, output_path):
     for layer in data["layers"]:
         src = layer.get("source", {})
         if "colorbar_jet_16_crop550.zarr" in src.get("url", ""):
+        # if "colorbar_jet_16_9600_crop550.zarr" in src.get("url", ""):
             mat = src["transform"]["matrix"]
-            mat[3][-1] = y_size - 2059
+            # mat[3][-1] = y_size - 2059
+            mat[3][-1] = y_size - 1952
             mat[4][-1] = x_size
 
     # 8) Save final
@@ -56,12 +58,14 @@ def modify_template_json(template_path, input_path, output_path):
 
 if __name__ == "__main__":
     template = "/mnt/d/Xiaoman/002_serialMIP/04_json/template.json"
-    input_dir = "/mnt/d/Xiaoman/002_serialMIP/03_zarr/AZ4_DB2b_Ex561"
-    output_dir = "/mnt/d/Xiaoman/002_serialMIP/04_json/test"
+    # template = "/mnt/d/Xiaoman/002_serialMIP/04_json/template_9600.json"
+    input_dir = "/mnt/d/Xiaoman/002_serialMIP/03_zarr/BH1_TM7a_C_Ex639"
+    output_dir = "/mnt/d/Xiaoman/002_serialMIP/04_json"
     modify_template_json(template, input_dir, output_dir)
 
 # after running the script, the modified json file will be saved to the output directory
 # Use aws command to upload the json file to the s3 bucket
-# aws --endpoint-url https://wulab.cac.cornell.edu:8443/ s3 --profile CAC cp /mnt/d/Xiaoman/002_serialMIP/04_json/AZ4_DB2d_Ex561.json s3://neuroglancer/AZ4_DB2d_Ex561_mip/AZ4_DB2d_Ex561.json
+# aws s3 --profile CACNEW cp /mnt/d/Xiaoman/002_serialMIP/04_json/BH1_TM7a_C_Ex639.json s3://neuroglancer/BH1_TM7a_C_Ex639_mip/BH1_TM7a_C_Ex639.json
 # finnal url like:
-# https://ngapp.mab3d-atlas.com/#!https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/AZ4_DB2b_Ex561_mip/AZ4_DB2b_Ex561.json
+# https://ngapp.mab3d-atlas.com/#!https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/BH1_TM7a_C_Ex561_mip/BH1_TM7a_C_Ex561.json
+# https://ngapp.mab3d-atlas.com/#!https://wulab.cac.cornell.edu:8443/swift/v1/neuroglancer/BH1_TM7a_C_Ex639_mip/BH1_TM7a_C_Ex639.json

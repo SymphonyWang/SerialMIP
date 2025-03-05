@@ -10,9 +10,9 @@ from ome_zarr.writer import write_image
 import subprocess
 
 # Set input and output paths
-input_path = '/mnt/d/Xiaoman/002_serialMIP/00_input/AZ4_DB2d_Ex561'
-wholemip_tif_save_path = '/mnt/d/Xiaoman/002_serialMIP/02_tif/AZ4_DB2d_Ex561/AZ4_DB2d_Ex561_wholemip.tif'
-wholemip_zarr_save_path = '/mnt/d/Xiaoman/002_serialMIP/03_zarr/AZ4_DB2d_Ex561/AZ4_DB2d_Ex561_wholemip.zarr'
+input_path = '/mnt/d/Xiaoman/002_serialMIP/00_input/BH1_TM7a_C_Ex639'
+wholemip_tif_save_path = '/mnt/d/Xiaoman/002_serialMIP/02_tif/BH1_TM7a_C_Ex639/BH1_TM7a_C_Ex639_wholemip.tif'
+wholemip_zarr_save_path = '/mnt/d/Xiaoman/002_serialMIP/03_zarr/BH1_TM7a_C_Ex639/BH1_TM7a_C_Ex639_wholemip.zarr'
 
 # Constants
 MIP_NUM_MAX = 16
@@ -120,8 +120,8 @@ def process_single_layer_mip():
     tiff_files = sorted([f for f in os.listdir(input_path) if f.endswith('.tif')])[:MIP_NUM_MAX]
     num_layers = len(tiff_files)
 
-    multilayersmip_tif_save_path = f'/mnt/d/Xiaoman/002_serialMIP/02_tif/AZ4_DB2d_Ex561/AZ4_DB2d_Ex561_multilayersmip_{num_layers}.tif'
-    multilayersmip_zarr_save_path = f'/mnt/d/Xiaoman/002_serialMIP/03_zarr/AZ4_DB2d_Ex561/AZ4_DB2d_Ex561_multilayersmip_{num_layers}.zarr'
+    multilayersmip_tif_save_path = f'/mnt/d/Xiaoman/002_serialMIP/02_tif/BH1_TM7a_C_Ex639/BH1_TM7a_C_Ex639_multilayersmip_{num_layers}.tif'
+    multilayersmip_zarr_save_path = f'/mnt/d/Xiaoman/002_serialMIP/03_zarr/BH1_TM7a_C_Ex639/BH1_TM7a_C_Ex639_multilayersmip_{num_layers}.zarr'
 
     image = np.stack([tiff.imread(os.path.join(input_path, f)) for f in tiff_files], axis=0)[None, :, None]
     save_tiff(multilayersmip_tif_save_path, image)

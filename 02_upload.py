@@ -2,15 +2,15 @@ import subprocess
 
 # Define variables
 bucket = 's3://neuroglancer'
-profile = 'CAC'
+profile = 'CACNEW'
 # endpoint_url = 'https://redcloud.cac.cornell.edu:8443/'
 endpoint_url = 'https://wulab.cac.cornell.edu:8443/'
 
 source_path = '/mnt/d/Xiaoman/002_serialMIP/03_zarr'
-target_name = 'AZ4_DB2d_Ex561'
+target_name = 'BH1_TM7a_C_Ex639'
 wholemip_source_path = f'{source_path}/{target_name}/{target_name}_wholemip.zarr'
 print(wholemip_source_path)
-multilayersmip_source_path = f'{source_path}/{target_name}/{target_name}_multilayersmip_14.zarr'# change the number for each target
+multilayersmip_source_path = f'{source_path}/{target_name}/{target_name}_multilayersmip_15.zarr'# change the number for each target
 print(multilayersmip_source_path)
 
 
