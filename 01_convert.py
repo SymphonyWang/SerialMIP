@@ -112,7 +112,8 @@ def process_whole_mip():
              [{"type": "scale", "scale": [1, 1, 1, 14.4, 14.4]}],  # Downsampled by 8 (path 3)
              [{"type": "scale", "scale": [1, 1, 1, 28.8, 28.8]}], # Downsampled by 16 (path 4)
         ],
-        chunks=(1, 4, 1, rgba_mip.shape[0] // 8, rgba_mip.shape[1] // 8))
+        # chunks=(1, 4, 1, rgba_mip.shape[0] // 8, rgba_mip.shape[1] // 8))
+        chunks=(1, 4, 1, 1024, 1024)) # 1024x1024 chunks to avoid the last chunk being too small
     print(f"Whole MIP Zarr successfully saved to {wholemip_zarr_save_path}")
 
 # Single Layer MIP Processing
